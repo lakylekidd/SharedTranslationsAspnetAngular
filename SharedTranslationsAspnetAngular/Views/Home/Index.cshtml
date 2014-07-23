@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div ng-controller="DemoController">
+    <p class="lead">This is translated using MVC:</p>
+    <h1>@SharedTranslationsAspnetAngular.Resources.Resources.WhatsYourName</h1>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p class="lead">This is translated using angular-translate:</p>
+    <h1 translate>WhatsYourName</h1>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p class="lead">Change language to:</p>
+    <a class="btn btn-default" ng-click="setLanguage('en')">English</a>
+    <a class="btn btn-default" ng-click="setLanguage('es')">Spanish</a>
+    <a class="btn btn-default" ng-click="setLanguage('fr')">French</a>
+</div>
